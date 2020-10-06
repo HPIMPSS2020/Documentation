@@ -1,0 +1,14 @@
+# Conclusion
+
+While the implementation of a learning tangle with IPFS is clearly working there is more work required before it can be used in a real-world scenario. We therefore hope to also motivate other researchers to study and improve this prototype further. A big challenge is to make the learning tangle algorithms such as tip and consensus selection more context-aware and resilient. These algorithms need to be adapted to the possibility of missing or not available data and transactions on the network. Alternatively the garbage collection of IPFS needs to be adjusted to allow for some redundancy by considering importance or recency of data. Older data would then be more likely to be deleted than recently added blocks. This should make the learning tangle algorithms more stable.
+
+Even with these additional improvements the tangle will reach some storage limit at one point since it will grow monotonically over time. One approach to fix this could be a rolling window of transactions in which peers move the starting point \(genesis transaction\) forward in the tangle and delete all previous transactions. Other blockchain projects already work on so-called snapshotting techniques to increase scalability.   
+
+Another improvement that could be made is implementing a data availability check before publishing a new transaction. This can be achieved by asking other peer to notify the publishing peer once they are able to fetch the data.
+
+A way of improving the benchmark quality of the prototype is increasing the storage size of the machines or increasing the number of devices in the cluster to allow for longer or larger simulations. Furthermore, one could implement any feasible alternative for peer-to-peer communication to replace IPFS. For simulation scenarios it would be interesting to see how the performance changes with alternative \(potentially non-decentralized\) implementations such as RabbitMQ for message passing and BitTorrent for data sharing.
+
+Lastly, we also showed that training a model from zero takes a lot more time in a distributed learning approach because of the massive communication overhead. Using a pre-trained model could improve this.
+
+In conclusion, during the course of this project we showed that a practical implementation of the learning tangle concept is possible with IPFS. We proved this by simulating large networks using a scale-up approach and by simulating a more realistic scenario using a scale-out approach. Both simulations showed very satisfactory and promising benchmark results. Therefore, we conclude that the concept and prototype were well designed. Once we started scaling the solution we also saw that the devil is in the details when it comes to decentralized systems. Nevertheless, we think that a real-world application of the learning tangle concept is possible because most of the challenges encountered can be solved by investing additional engineering work.
+

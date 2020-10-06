@@ -1,0 +1,8 @@
+# Introduction
+
+**Learning Tangle** is a **containerized prototype** for experimenting with **decentralized machine learning**. Its primary objective is to evaluate a specific approach to decentralized machine learning that uses a Tangle distributed ledger for intra-peer communication. The prototype is written in Python and uses Kubernetes for orchestration of containers. Furthermore, it uses IPFS for peer-to-peer communication and TensorFlow for machine learning model training. 
+
+Code and documentation are the result of a Master's project by [Maximilian Diez](mailto:maximilian.diez@student.hpi.de), [Ramin Gharib](mailto:ramin.gharib@student.hpi.de) and [Maximilian Schall](mailto:maximilian.schall@student.hpi.de). It was supervised by Robert Schmid, Jossekin Beilharz and Professor Andreas Polze from the Professorship for Operating Systems and Middleware at the Hasso Plattner Institute, Potsdam. It is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). 
+
+Like almost always in \(computer\) science, the work done in the course of this project is based on other researchers' previous publications. The exceptional work on which we based our prototype done by Robert Schmid with the [Tangle](https://gitlab.hpi.de/osm/tangle-learning/learning-tangle)[ Learning](https://gitlab.hpi.de/osm/tangle-learning/learning-tangle) prototype implementation as well as Paul Geppert and Alon Gal with the [IOTA visualization](https://gitlab.hpi.de/osm/tangle-learning/iotavisualization) visualization component warrant individual mentioning. 
+
